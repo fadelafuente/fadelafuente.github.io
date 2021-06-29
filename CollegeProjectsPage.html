@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	
+		<!-- Applies responsive design of the webpage -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<!-- Navigation bar at the top of the website -->
+		<header>
+			<a href="index.html" class="header-brand">Fernando</a>
+			<nav>
+				<ul id="header-tabs">
+					<li><a href="AboutMePage.html">About Me</a></li>								
+					<li><a href="PortfolioPage.html">Portfolio</a>
+						<ul>
+							<li id="college-projects"><a href="CollegeProjectsPage.html">College Projects</a></li>
+							<li id="personal-projects"><a href="PersonalProjectsPage.html">Personal Projects</a></li>
+							<li id="video-games"><a href="GamesPage.html">Video Games</a></li>
+							<li id="videos"><a href="VideosPage.html">Videos</a></li>
+						</ul>
+					</li>			
+					<li><a href="ExplorePage.html">Explore</a></li>
+				</ul>
+			</nav>
+		</header>
+    
+		<!-- Text inside dark gray box -->
+		<main>
+			<div class="main-content">
+				<h1>College Projects</h1>
+
+				<!-- List of Past Projects Start -->
+				<!-- CSCE 221 List Start -->
+				<section id="flexbox-holder">
+					<div id="flex-left">
+						<p style="color: #ffab4a; font-size: 24px;"><strong>Data Structures and Algorithms</strong></p><br>
+						<ul>
+							<li class="project-titles">Countries - C++
+									<ul>
+										<li>We were to take two input files--one containing data on countries and the other with the continents the countries belong 
+											to--and organize each country to the continent it belongs to as well as keep track of which country has the highest population, education 
+											GDP spent, and literacy rate on each continent.
+										</li>
+									</ul>
+								</li><br>
+							<li class="project-titles">Stack and Queues - C++
+								<ul>
+									<li> A project used to understand how queues, stacks, and their functions work. We made a stack and queue with the use of a singly linked list.
+									</li>
+								</ul>
+							</li><br>
+							<li class="project-titles">TicTacToe - C++
+								<ul>
+									<li>The TicTacToe class read in a file with every move made in the game, and made a linked list (either doubly or singly linked) with each node being each move, and determines 
+										who won, lost, if there was a draw, or if the game is unfinished. The TicTacTrie class was used to keep track on how many times each player 
+										won, or how many draws there were.
+									</li>
+								</ul>
+							</li><br>
+							<li class="project-titles">2-3 Tree - C++
+								<ul>
+									<li>I would rather forget this project, so to put it simply, we were to construct a 2-3 tree and use a tree iterator to find the first item, last 
+										item, and range in the tree equal to a given key.
+									</li>
+								</ul>
+							</li><br>
+							<li class="project-titles">Hash Tables - C++
+								<ul>
+									<li>Reading in a file with cities, the idea of the project was to hash the cities into a primary table, and if the hash would have resulted in a 
+										collision, we instead hash into the secondary table.
+									</li>
+								</ul>
+							</li><br>
+						</ul>
+					</div>
+					<!-- CSCE 221 List End -->
+
+					<!-- CSCE 314 List start -->
+					<div id="flex-right">
+						<p style="color: #ffab4a; font-size: 24px;"><strong>Programming Languages</strong></p><br>
+						<ul>
+							<li class="project-titles">Workout App - Java
+								<ul>
+									<li>given source code, we were to make a workout app in java. We implemented the file reader and the functions used to track the name of the person 
+										working out, the primary and secondary muscle, equipment used, and any descriptions and reminders. We also implemented a main window with buttons 
+										leading to panels pertaining to workouts for that specific muscle group, but not the panels themselves.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					<!-- CSCE 314 List End -->
+
+					<!-- CSCE 315 List start -->
+						<p style="color: #ffab4a; font-size: 24px;"><strong>Programming Studio</strong></p><br>
+						<ul>
+							<li class="project-titles">Personal Website - html
+								<ul>
+									<li>We were to go and learn any language of our choice to create a website on our own and have a home page, about me page, professional page, portfolio 
+										page, and a service page. The professional page had our resume, the portfolio page had our past projects (only descriptions if they were class projects), 
+										and the service page had anything prominent we did in the past.
+									</li>
+								</ul>
+							</li><br>
+							<li class="project-titles">Tower Defense - C#
+								<ul>
+									<li>Either starting from scratch, or finding open source code and adding on, we were to make a game of our choice that added functionality that made it easier 
+										for people with disabilities to play the game. My group chose to add on to open source code as well as make a tower defense game. We added the options to play 
+										the game with either mouse or keyboard, added the options to change the contrast, text color, font size, keybinds, voice overs, and more.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					<!-- CSCE 315 List End -->
+
+					<!-- CSCE 431 List start -->
+						<p style="color: #ffab4a; font-size: 24px;"><strong>Software Engineering</strong></p><br>
+						<ul>
+							<li class="project-titles">Search and Rescue - Ruby on Rails
+								<ul>
+									<li>Given our clients needs and wants for the project, we were to make an application for emergency responder's that would upload images taken by a drone 
+										with metadata and put a marker on a map to indicate where that image was taken. We also were to put an arrow on the map indicating which direction the camera 
+										was facing, as well as a shaded area that indicated what was covered by the image. To make the emergency responder's jobs easier, we were to have a navigation 
+										bar at the top that has a slider that would narrow down the markers to a specific date range, and toggle switches that would turn the arrows or the shaded areas 
+										off.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- CSCE 431 List End -->
+				<!-- List of Past Projects End -->
+			</div>
+		</main>
+
+		<footer>
+			<div class="wrapper">
+				<ul class="footer-links-main">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="AboutMePage.html">About Me</a>
+					</li>
+					<li>
+						<a href="PortfolioPage.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="ExplorePage.html">Explore</a>
+					</li>
+				</ul>
+				<ul class="footer-links-categories">
+					<li><p>Categories</p></li>
+					<li>
+						<a href="GamesPage.html">Games</a>
+					</li>
+					<li>
+						<a href="CollegeProjectsPage.html">College Projects</a>
+					</li>
+					<li>
+						<a href="PersonalProjectsPage.html">Personal Projects</a>
+					</li>
+					<li>
+						<a href="VideosPage.html">Videos</a>
+					</li>
+				</ul>
+				<div class="footer-sm">
+					<a href="https://www.linkedin.com/in/fernando-de-la-fuente-794927191/" target="blank">
+						<img src="image/linkedin.png" alt="linkedin logo">
+					</a>
+					<a href="https://github.com/IVnando" target="blank">
+						<img src="image/github.png" alt="github logo">
+					</a>
+				</div>
+			</div>
+		</footer>
+  </body>  
+</html>
