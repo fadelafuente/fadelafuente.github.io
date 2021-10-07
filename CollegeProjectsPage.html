@@ -1,3 +1,4 @@
+@@ -0,0 +1,184 @@
 <!DOCTYPE html>
 <html>	
 	<head>
@@ -43,37 +44,25 @@
 						<ul>
 							<li class="project-titles">Countries - C++
 									<ul>
-										<li>We were to take two input files--one containing data on countries and the other with the continents the countries belong 
-											to--and organize each country to the continent it belongs to as well as keep track of which country has the highest population, education 
-											GDP spent, and literacy rate on each continent.
+										<li>This project was the first project of the semester, and if I remember correctly, was mostly to see where the class stood in terms of how well we can code. The task was to take two input files--one containing data on countries and the other with the continents the countries belong to--and organize each country to the continent it belongs to as well as keep track of which country/countries has the highest population, education GDP spent, and literacy rate based on gender for each continent. The country class only held setters and getters, and the continent class was the same plus the addition of an insertion operator (<<) overload. Most of the busy work is in the driver while reading the second file, where every country was assigned to their respected continent before said country was compared to the country with the highest population, country with the highest education GDP spent, etc. The result was in a high grade, but looking back on my code, could definitely been reduced. For example, while reading the first file, I would grab one line of data then check if it was missing, or N/A before grabbing the next line of country data. However, for each country, I could have read all the lines of data at once before checking.
 										</li>
 									</ul>
 								</li><br>
 							<li class="project-titles">Stack and Queues - C++
 								<ul>
-									<li> A project used to understand how queues, stacks, and their functions work. We made a stack and queue with the use of a singly linked list.
+									<li>In order to learn the differences between queues, stacks, and their functions, we were to work individually and create a stack and queue using a doubly linked list. Provided source code, the task was to implement the linked list, and using inheritance, override the push and pop methods to implement the stack and queues. I started by implementing the linked list and the functions the stack and queues will be sharing. Next was the stack which overrides the push, and pop, and adds the top functions. The queue is similar to the stack where the only really difference is the pop function, and instead of top there is a front function. This resulted in a high grade, however, looking back on my code, I could have reduced redundant code. The push function was overridden in both the queue and stack class, but a second look shows that they are both the same implementation. The overloaded equals operator and the clear function are the exact same as well, so this could have been reduced to being implemented in the linked list parent class.
 									</li>
 								</ul>
 							</li><br>
 							<li class="project-titles">TicTacToe - C++
 								<ul>
-									<li>The TicTacToe class read in a file with every move made in the game, and made a linked list (either doubly or singly linked) with each node being each move, and determines 
-										who won, lost, if there was a draw, or if the game is unfinished. The TicTacTrie class was used to keep track on how many times each player 
-										won, or how many draws there were.
-									</li>
-								</ul>
-							</li><br>
-							<li class="project-titles">2-3 Tree - C++
-								<ul>
-									<li>I would rather forget this project, so to put it simply, we were to construct a 2-3 tree and use a tree iterator to find the first item, last 
-										item, and range in the tree equal to a given key.
+									<li>This was a individual project where my class was continuing practicing linked lists. Given three classes, I was to take file(s) as a command line argument(s) that contained every board state in a game of tic-tac-toe, store each state in a linked list, and keep track of the results of the game, whether complete or not. I chose to implement a singly linked list. I started by creating the TicTacNode class, which will be the nodes for the linked list implementation in the TicTacToe class. Next, I read the file in the TicTacToe class, this way once all of the board states are in the linked list, the current pointer will be pointing at the last board state. Verifying the board state was as simple as see if one location on the board was equal to another in a three-in-a-row pattern. The TicTacTrie class was more difficult to implement as I had to view it as a tree where I am finding all the possible paths that could be taken using the game data from the files. The result was a project that I was proud of at the time, but after looking back on my old code, I noticed places that could be shortened or simplified. 
 									</li>
 								</ul>
 							</li><br>
 							<li class="project-titles">Hash Tables - C++
 								<ul>
-									<li>Reading in a file with cities, the idea of the project was to hash the cities into a primary table, and if the hash would have resulted in a 
-										collision, we instead hash into the secondary table.
+									<li>While learning about hash tables, we had a project that would help us understand hash collisions. Given source code, we were to work individually and read in a file containing the state and coordinates of cities and hash them into primary table. If there was a collision in the primary table, we instead hash into the secondary table. If I remember correctly, I implemented the primary table’s insert function and getter functions before the file reader. Ignoring collisions for now, this was so I can see whether the data from the file was input into the primary table correctly. After this confirmation, I pretty much copied the primary to the secondary before going back to the primary and had any collisions redirected to the secondary table for hashing. In the end, a majority were hashed correctly, but there were still a few (to the best of my memory, it was about 20 out of 1000) collisions that were not resolved. 
 									</li>
 								</ul>
 							</li><br>
@@ -87,9 +76,7 @@
 						<ul>
 							<li class="project-titles">Workout App - Java
 								<ul>
-									<li>given source code, we were to make a workout app in java. We implemented the file reader and the functions used to track the name of the person 
-										working out, the primary and secondary muscle, equipment used, and any descriptions and reminders. We also implemented a main window with buttons 
-										leading to panels pertaining to workouts for that specific muscle group, but not the panels themselves.
+									<li>In my programming languages class, I was learning about how functional programming languages differ from objected-oriented programming. As a final project and given source code, I was to learn java in my own time and complete a workout application. I started by looking up java tutorials on YouTube, and looking over the documentation. As I was learning, I would notice the similarities between C++, and see how the syntax differs. As a result, I was able to implement a file reader, and the functions used to track the name of the person working out, the primary and secondary muscles that were being worked on, equipment used, and any descriptions and/or reminders. I also implemented the main window to the workout app that would connect to the other panels of the app.
 									</li>
 								</ul>
 							</li>
@@ -101,17 +88,13 @@
 						<ul>
 							<li class="project-titles">Personal Website - html
 								<ul>
-									<li>We were to go and learn any language of our choice to create a website on our own and have a home page, about me page, professional page, portfolio 
-										page, and a service page. The professional page had our resume, the portfolio page had our past projects (only descriptions if they were class projects), 
-										and the service page had anything prominent we did in the past.
+									<li>The first project of the semester, making a personal website had the intention of getting the class to write about themselves, as well as a website that could prove to be useful in the future. For the website itself, I needed to choose what language to use and add an about me page, a portfolio page, a professional page, and a service page. I started off researching HTML through YouTube tutorials before researching CSS to stylize how I want my website to look like. By the end of the project, I was able to create basic content cards with a navigation bar, and create basic styling.
 									</li>
 								</ul>
 							</li><br>
-							<li class="project-titles">Tower Defense - C#
+							<li class="project-titles">Tower Defense - C# in Unity
 								<ul>
-									<li>Either starting from scratch, or finding open source code and adding on, we were to make a game of our choice that added functionality that made it easier 
-										for people with disabilities to play the game. My group chose to add on to open source code as well as make a tower defense game. We added the options to play 
-										the game with either mouse or keyboard, added the options to change the contrast, text color, font size, keybinds, voice overs, and more.
+									<li>Our professor wanted us to think about accessibility rather than implementation for this project. That is why each group was allowed to choose whether to start from scratch, or use source code and add features that makes our game accessible. I would meet with my group about once a week and showcase what I had implemented, come up with what else we should implement, or help my other members brainstorm how to implement their assigned feature. I implemented a slider that adjust the RGB colors as well as a slider for color contrast for those who are colorblind. I even implemented the difficulty setting by adjusting enemies health and damage if more time to learn the game is needed. The result was a high grade for a tower defense game with features for cognitive, motor, visual, and audio impaired.
 									</li>
 								</ul>
 							</li>
@@ -123,11 +106,7 @@
 						<ul>
 							<li class="project-titles">Search and Rescue - Ruby on Rails
 								<ul>
-									<li>Given our clients needs and wants for the project, we were to make an application for emergency responder's that would upload images taken by a drone 
-										with metadata and put a marker on a map to indicate where that image was taken. We also were to put an arrow on the map indicating which direction the camera 
-										was facing, as well as a shaded area that indicated what was covered by the image. To make the emergency responder's jobs easier, we were to have a navigation 
-										bar at the top that has a slider that would narrow down the markers to a specific date range, and toggle switches that would turn the arrows or the shaded areas 
-										off.
+									<li>I worked in a team with five other members where one of the professors in the computer science department was our client. Our task was to create an app for emergency responders that will show which areas on a map have been searched already during a natural disaster. I met up with my group weekly for scrum meetings, where I often would help the product owner define the value of the next tasks to take, and how to break the tasks up. Additionally, I implemented the entire database of images that allows emergency responders to save time from obtaining data during natural disasters. This would allow emergency responders to more easily find areas that have not been searched, or if there is anyone in need of help. The results of this project were admittedly subpar since it felt like only two of the six members contributed, however this was also when the covid pandemic started. This did however teach me the importance of communication in a team, which I carried with me into my senior year of college. I must also admit, I was a little proud figuring out how to obtain camera data such as orientation, angle, yaw, pitch, and roll from the provided images. 
 									</li>
 								</ul>
 							</li>
